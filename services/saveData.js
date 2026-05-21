@@ -15,8 +15,8 @@ async function saveData(user,rl,main,pause) {
 
     const [result] = await connection.execute(sqlSave, values);
 
-    console.log("Cadastro criado com sucesso!");
-    console.log("ID", result.insertId);
+    console.log("Cadastro criado com sucesso! ✅");
+    console.log("🆔 =", result.insertId);
     
     pause(rl,main);
 }

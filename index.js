@@ -11,11 +11,11 @@ const pause = require("./services/pause");
 
 async function main() {
     
-    console.log("1. Criar usuário.");
-    console.log("2. Fazer login.");
-    console.log("0. Sair login.");
+    console.log("1. Criar usuário. ➕");
+    console.log("2. Fazer login. 👤");
+    console.log("0. Sair. ❌\n");
     
-    rl.question(`Selecione a opção que deseja: `, (option) => {
+    rl.question(`Selecione a opção que deseja 📌: `, (option) => {
 
         option = Number(option);
 
@@ -35,7 +35,7 @@ async function main() {
                 break;                
 
             default:
-                console.log("Opção inválida!");
+                console.log("Opção inválida! 🚫");
                 main();
                 break;
         }
