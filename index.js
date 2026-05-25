@@ -7,15 +7,18 @@ const rl = readline.createInterface({  /* Rl utilizado para receber input do usu
 
 const registerUser = require("./services/registerUser");
 const login = require("./services/login");
+const deleteUser = require("./services/deleteUser");
 const pause = require("./services/pause");
 
 async function main() {
     
+    console.clear();
     console.log("1. Criar usuário. ➕");
     console.log("2. Fazer login. 👤");
+    console.log("3. Deletar usuário. 🗑️");
     console.log("0. Sair. ❌\n");
     
-    rl.question(`Selecione a opção que deseja 📌: `, (option) => {
+    rl.question(`Selecione a opção que deseja 📌 : `, (option) => {
 
         option = Number(option);
 
@@ -27,6 +30,10 @@ async function main() {
 
             case 2:
                 login(rl,main,pause);
+                break;
+
+            case 3:
+                deleteUser(rl,main,pause);
                 break;
 
             case 0:

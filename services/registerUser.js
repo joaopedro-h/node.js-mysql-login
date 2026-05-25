@@ -23,8 +23,6 @@ async function registerUser(rl,main,pause) {
 
                 await saveData(user,rl,main,pause);
 
-                rl.close();
-
             });
         });
     });
