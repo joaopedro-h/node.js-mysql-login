@@ -5,7 +5,7 @@ const rl = readline.createInterface({  /* Rl utilizado para receber input do usu
   output: process.stdout
 });
 
-const registerUser = require("./services/registerUser");
+const registerUser = require("./services/registerUser"); /* Recebe as importações das funções no index. */
 const login = require("./services/login");
 const deleteUser = require("./services/deleteUser");
 const pause = require("./services/pause");
